@@ -24,10 +24,11 @@
 .header_left ul {
   width: 140%;
   display: flex;
-  justify-content: space-between;
+  gap: 18px;
   align-items: center;
   list-style: none;
   cursor: pointer;
+  font-size: 20px;
 }
 .header_right ul {
   width: 150%;
@@ -35,4 +36,15 @@
   justify-content: space-around;
   list-style: none;
   cursor: pointer;
+}
+@media screen and (max-width: 800px) {
+  .header_left ul li {
+    display: none;
+  }
+}
+@media screen and (max-width: 950px) {
+  .header_left ul {
+    gap: 10px;
+    font-size: 18px;
+  }
 }

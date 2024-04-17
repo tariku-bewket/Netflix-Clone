@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './banner.css';
 import axios from '../../utils/axios';
-import requsets from '../../utils/requests';
+import requests from '../../utils/requests';
 
 const Banner = () => {
   const [movie, setMovie] = useState({});
@@ -9,7 +9,7 @@ const Banner = () => {
   useEffect(() => {
     (async () => {
       try {
-        const request = await axios.get(requsets.fetchNetflixOriginals);
+        const request = await axios.get(requests.fetchNetflixOriginals);
         // console.log(request);
         setMovie(
           request.data.results[

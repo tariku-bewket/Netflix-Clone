@@ -14,6 +14,9 @@
 .row__posters::-webkit-scrollbar {
   display: none;
 }
+.row__posters img:hover {
+  cursor: pointer;
+}
 .row__poster:hover {
   transform: scale(1.08);
 }
